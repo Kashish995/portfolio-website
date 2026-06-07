@@ -3,6 +3,29 @@
     padding: 0;
 }
 
-body{
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, purple, rgb(32, 1, 42));
+    color:blueviolet;
+    padding: 18px 0;
+}
+.logo {
+    font-size: 22px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+nav ul {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+nav ul li{ 
+    list-style-type: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.heroin{
     background-color: red;
+    height: 65vh;
+    display: flex;
 }
