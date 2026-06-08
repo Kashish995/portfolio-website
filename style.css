@@ -35,6 +35,11 @@ nav ul li{
     align-items: center;
      font-family: "Roboto", sans-serif;
 }
+.heroin-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .heroin-left .one{
 font-size: 68px;
 color: rgb(33, 4, 76);
@@ -57,7 +62,7 @@ ul li a{
     padding: 9px 0;
 }
 .btn{
-    background-image: linear-gradient(to right, rgb(128, 128, 196), rgb(79, 79, 192));
+    background-color: rgb(59, 8, 132);
     color: white;
     padding: 9px 7px;
     margin: 0 2px;
@@ -66,21 +71,30 @@ ul li a{
     cursor: pointer;
     font-size: 18px;
     font-weight: bolder ;
+    transition: all 0.5s;
 }
+
+.btn:hover{
+    background: rgb(59, 54, 200);
+}
+
 .project {
         display: flex;
         align-items: center;
         font-family: "Roboto", sans-serif;
+        border-top: 2px solid  rgb(136, 165, 246. 25%);
+        padding: 22px 100px;
         background-image: linear-gradient(to right, rgb(183, 148, 203), rgb(69, 45, 146));
     }
     .project-image img{
-        width: 49.5vw;
-        
+        width: 29.5vw;
+        margin: 35;
+        border-radius: 20px;
     }
     .project-info{
         display: flex;
         flex-direction: column;
-        padding: 12px;
+        padding: 42px;
     }
     .project-info .text{
         font-size: 27px;
@@ -96,3 +110,58 @@ ul li a{
     .row-reverse{
         flex-direction: row-reverse ;
     }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 12px 0;
+        font-family: "Roboto", sans-serif;
+
+    }
+
+@media screen and (max-width: 950px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .project {
+        padding: 1px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hero-left .one {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-left .two {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image img {
+        width: 80vw;
+        margin: 15px 35px;
+    }
+
+    .project-info{
+        padding: 15px 23px;
+    }
+
+}
