@@ -67,3 +67,32 @@ ul li a{
     font-size: 18px;
     font-weight: bolder ;
 }
+.project {
+        display: flex;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        background-image: linear-gradient(to right, rgb(183, 148, 203), rgb(69, 45, 146));
+    }
+    .project-image img{
+        width: 49.5vw;
+        
+    }
+    .project-info{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+    }
+    .project-info .text{
+        font-size: 27px;
+        padding: 10px 0;
+        font-weight: bold;
+        color: white;
+    }
+    .project-info p{
+        padding: 12px 0;
+        
+    }
+
+    .row-reverse{
+        flex-direction: row-reverse ;
+    }
